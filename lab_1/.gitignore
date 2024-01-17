@@ -1,0 +1,7 @@
+/*
+
+!*.xpr
+!*.hw/
+!*.ip_user_files/
+!Src_lab1/
+!.gitignore
