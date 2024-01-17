@@ -44,7 +44,8 @@ module tb;
   */
 
  // Workshop 2 part 2
- reg [7:0] input [1023:0];
+ integer i;
+ reg [7:0] fibo [10:0];
   
   initial
     begin
@@ -54,10 +55,14 @@ module tb;
         #1000 btnR = 0;
         #1500000;
         
-        tskRunSEND(3);
-        $readmemb("seq.code", input);
-        for (i = 0; i < input[0]; i = i + 1) begin
-          tskRunInst(input[i + 1]);
+        fibo[0] = 0;
+        fibo[1] = 1;
+        for (i = 2; i < 10; i = i + 1) begin
+          fibo[i] = fibo[i-1] + fibo[i-2];
+        end
+
+        for (i = 0; i < 10; i = i + 1) begin
+          tskRunSEND(fibo[i]);
         end
 
         
