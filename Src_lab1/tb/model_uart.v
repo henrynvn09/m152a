@@ -26,6 +26,7 @@ module model_uart(/*AUTOARG*/
         TX = 1'b1;
      end
    
+   reg [1:0] counter;
    always @ (negedge RX)
      begin
         rxData[7:0] = 8'h0;
@@ -37,7 +38,13 @@ module model_uart(/*AUTOARG*/
              rxData[7:0] = {RX,rxData[7:1]};
           end
         ->evByte;
-        $display ("%d %s Received byte %02x (%s)", $stime, name, rxData, rxData);
+        counter = counter + 1;
+        if (counter == 3) begin
+          counter = 0;
+          $display ("%d %s Received byte %02x (%s)", $stime, name, rxData, rxData);
+        end else begin
+          $display ("%s", rxData);
+        end
      end
 
    task tskRxData;
