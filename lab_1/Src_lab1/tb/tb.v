@@ -16,6 +16,7 @@ module tb;
    wire [7:0]           led;                    // From uut_ of basys3.v
    // End of automatics
 
+   /*
    initial
      begin
         //$shm_open  ("dump", , ,1);
@@ -40,6 +41,31 @@ module tb;
         #1000;        
         $finish;
      end
+  */
+
+ // Workshop 2 part 2
+ reg [7:0] input [1023:0];
+  
+  initial
+    begin
+        clk = 0;
+        btnR = 1;
+        btnS = 0;
+        #1000 btnR = 0;
+        #1500000;
+        
+        tskRunSEND(3);
+        $readmemb("seq.code", input);
+        for (i = 0; i < input[0]; i = i + 1) begin
+          tskRunInst(input[i + 1]);
+        end
+
+        
+        #1000;        
+        $finish;
+     end
+      
+    end
 
    always #5 clk = ~clk;
    
