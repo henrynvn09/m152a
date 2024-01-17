@@ -43,7 +43,7 @@ module model_uart(/*AUTOARG*/
           counter = 0;
           $display ("%d %s Received byte %02x (%s)", $stime, name, rxData, rxData);
         end else begin
-          $display ("%s", rxData);
+          $display ("%s%n", rxData);
         end
      end
 
