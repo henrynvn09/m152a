@@ -1,0 +1,2134 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb  1 14:16:31 2024
+# Process ID: 11384
+# Current directory: C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1340 C:\Users\Student\Desktop\zxcvbnm\zxc\m152a-main\lab_2\lab_2.xpr
+# Log file: C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/vivado.log
+# Journal file: C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+ERROR: [XSIM 43-4286] "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 43. Undefined system function '$S'
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net S is not permitted [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v:33]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net E is not permitted [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v:34]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net F is not permitted [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v:35]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb  1 14:49:06 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 861.766 ; gain = 22.207
+run all
+0 --- 010 ---- 0001
+$finish called at time : 2100 ns : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+0 --- 010 ---- 0001
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Sig is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:59]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Sig is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:62]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Sig is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:65]
+ERROR: [VRFC 10-2787] module fpcvt ignored due to previous errors [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+ERROR: [VRFC 10-1280] procedural assignment to a non-register E is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:68]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register F is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:69]
+ERROR: [VRFC 10-2787] module fpcvt ignored due to previous errors [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+0 --- 010 ---- 0001
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+count leading 0: x
+count leading 0: 5
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+0 --- 010 ---- 0001
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+count leading 0: 5
+0 --- 010 ---- 0001
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+run all
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 863.414 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+count leading 0: 5
+0 --- 010 ---- 0001
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+count leading 0: 6
+0 --- 010 ---- 0000
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+count leading 0: 5, xxxx 
+count leading 0: 5, 0001 
+0 --- 010 ---- 0001
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+count leading 0: 3, xxxx 
+count leading 0: 3, 0101 
+0 --- 000 ---- 0101
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+count leading 0: 3, xxxx 
+count leading 0: 3, 0101 
+0 --- 000 ---- 0101
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:07:04 ; elapsed = 00:07:43 . Memory (MB): peak = 878.004 ; gain = 8.426
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 878.461 ; gain = 0.426
+run all
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, 1100 
+0 --- 000 ---- 1100
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, 1100 
+0 --- 000 ---- 1100
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+----------------------  count leading 0: 7, 1, xxxx 
+----------------------  count leading 0: 7, 1, 0000 
+0 --- 001 ---- 0000
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+---------------------- D_tmp 000000101100 
+---------------------- D_tmp 1 7
+----------------------  count leading 0: 7, 1, xxxx 
+---------------------- D_tmp 000000101100 
+---------------------- D_tmp 1 7
+----------------------  count leading 0: 7, 1, 0000 
+0 --- 001 ---- 0000
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+0 --- xxx ---- xxxx
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+---------------------- D_tmp 000000101100 
+---------------------- D_tmp 1 7
+----------------------  count leading 0: 7, 1, xxxx 
+---------------------- D_tmp 000000101100 
+---------------------- D_tmp 1 7
+----------------------  count leading 0: 7, 1, 0000 
+0 --- 001 ---- 0000
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+---------------------- D_tmp 000000101100 
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, xxxx 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+0 --- 001 ---- 0000
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:56]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+---------------------- D_tmp 000000101100 
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, xxxx 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+0 --- 001 ---- 0000
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-91] display is not declared [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:58]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-91] display is not declared [C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v:58]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 887.445 ; gain = 0.594
+run all
+0 --- xxx ---- xxxx
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+run all
+run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 888.242 ; gain = 0.418
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+0 --- xxx ---- xxxx
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, xxxx 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+0 --- 001 ---- 0000
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+---------------------- D_tmp xxxxxxxxxxxx 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+----------------------  count leading 0: 0, 0, xxxx 
+---------------------- D_tmp xxxxxxxxxxxx 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+----------------------  count leading 0: 0, 0, xxxx 
+---------------------- D_tmp xxxxxxxxxxxx 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+----------------------  count leading 0: 0, 0, xxxx 
+---------------------- D_tmp xxxxxxxxxxxx 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+----------------------  count leading 0: 0, 0, xxxx 
+---------------------- D_tmp xxxxxxxxxxxx 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+----------------------  count leading 0: 0, 0, xxxx 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, xxxx 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+0 --- 001 ---- 0000
+----------------------  count leading 0: 7, 1, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+----------------------  count leading 0: 7, 1, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i          11
+---------------------- i          10
+---------------------- i           9
+---------------------- i           8
+---------------------- i           7
+---------------------- i           6
+---------------------- i           5
+---------------------- i           5 1 7
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+---------------------- D_tmp xxxxxxxxxxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+---------------------- D_tmp xxxxxxxxxxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+---------------------- D_tmp xxxxxxxxxxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+---------------------- D_tmp xxxxxxxxxxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+---------------------- D_tmp xxxxxxxxxxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+----------------------  count leading 0: 6, 2, xxxx 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+----------------------  count leading 0: 6, 2, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+----------------------  count leading 0: 6, 2, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+----------------------  count leading 0: 6, 2, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+0 --- 010 ---- 0000
+----------------------  count leading 0: 6, 2, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+----------------------  count leading 0: 6, 2, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+----------------------  count leading 0: 6, 2, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+----------------------  count leading 0: 6, 2, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+----------------------  count leading 0: 6, 2, 0000 
+---------------------- D_tmp 000000101100 
+---------------------- i           5 6 2
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+----------------------  count leading 0: 5, 2, xxxx 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+0 --- 010 ---- 1011
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+----------------------  count leading 0: 0, 0, xxxx 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+----------------------  count leading 0: 5, 2, xxxx 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+0 --- 010 ---- 1011
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+----------------------  count leading 0: 5, 2, 1011 
+$finish called at time : 3 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+org: 000000101100 : 0 --- 010 ---- 1011
+org: 000000101101 : 0 --- 010 ---- 1011
+org: 000000101110 : 0 --- 010 ---- 1011
+org: 000000101111 : 0 --- 010 ---- 1011
+org: 000001111101 : 0 --- 011 ---- 1111
+$finish called at time : 7 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 62
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+org: xxxxxxxxxxxx : x --- 000 ---- xxxx
+org: xxxxxxxxxxxx : x --- 000 ---- xxxx
+org: xxxxxxxxxxxx : x --- 000 ---- xxxx
+org: xxxxxxxxxxxx : x --- 000 ---- xxxx
+org: 000000101100 : x --- 000 ---- xxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+org: 000000101100 : 0 --- 010 ---- xxxx
+org: 000000101100 : 0 --- 010 ---- 1011
+org: 000000101100 : 0 --- 010 ---- 1011
+org: 000000101100 : 0 --- 010 ---- 1011
+org: 000000101100 : 0 --- 010 ---- 1011
+org: 000000101101 : 0 --- 010 ---- 1011
+org: 000000101101 : 0 --- 010 ---- 1011
+org: 000000101101 : 0 --- 010 ---- 1011
+org: 000000101101 : 0 --- 010 ---- 1011
+org: 000000101101 : 0 --- 010 ---- 1011
+org: 000000101101 : 0 --- 010 ---- 1011
+org: 000000101110 : 0 --- 010 ---- 1011
+org: 000000101110 : 0 --- 010 ---- 1011
+org: 000000101110 : 0 --- 010 ---- 1011
+org: 000000101110 : 0 --- 010 ---- 1011
+org: 000000101110 : 0 --- 010 ---- 1011
+org: 000000101110 : 0 --- 010 ---- 1011
+org: 000000101111 : 0 --- 010 ---- 1011
+org: 000000101111 : 0 --- 010 ---- 1011
+org: 000000101111 : 0 --- 010 ---- 1011
+org: 000000101111 : 0 --- 010 ---- 1011
+org: 000000101111 : 0 --- 010 ---- 1011
+org: 000000101111 : 0 --- 010 ---- 1011
+org: 000001111101 : 0 --- 010 ---- 1011
+org: 000001111101 : 0 --- 011 ---- 1011
+org: 000001111101 : 0 --- 011 ---- 1111
+org: 000001111101 : 0 --- 011 ---- 1111
+org: 000001111101 : 0 --- 011 ---- 1111
+org: 000001111101 : 0 --- 011 ---- 1111
+org: 000001111101 : 0 --- 011 ---- 1111
+org: 000001111101 : 0 --- 011 ---- 1111
+org: 000001111101 : 0 --- 011 ---- 1111
+org: 000001111101 : 0 --- 011 ---- 1111
+org: 000001111101 : 0 --- 011 ---- 1111
+$finish called at time : 7 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 62
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sources_1/new/fpcvt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpcvt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 086621c768c04cb7b4e28e500e913e50 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fpcvt
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+what the f: xxxxxxxxxxxx : x --- 000 ---- xxxx
+what the f: xxxxxxxxxxxx : x --- 000 ---- xxxx
+what the f: xxxxxxxxxxxx : x --- 000 ---- xxxx
+what the f: xxxxxxxxxxxx : x --- 000 ---- xxxx
+what the f: 000000101100 : x --- 000 ---- xxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+what the f: 000000101100 : 0 --- 010 ---- xxxx
+what the f: 000000101100 : 0 --- 010 ---- 1011
+what the f: 000000101100 : 0 --- 010 ---- 1011
+what the f: 000000101100 : 0 --- 010 ---- 1011
+org: 000000101100 : 0 --- 010 ---- 1011
+what the f: 000000101101 : 0 --- 010 ---- 1011
+what the f: 000000101101 : 0 --- 010 ---- 1011
+what the f: 000000101101 : 0 --- 010 ---- 1011
+what the f: 000000101101 : 0 --- 010 ---- 1011
+what the f: 000000101101 : 0 --- 010 ---- 1011
+org: 000000101101 : 0 --- 010 ---- 1011
+what the f: 000000101110 : 0 --- 010 ---- 1011
+what the f: 000000101110 : 0 --- 010 ---- 1011
+what the f: 000000101110 : 0 --- 010 ---- 1011
+what the f: 000000101110 : 0 --- 010 ---- 1011
+what the f: 000000101110 : 0 --- 010 ---- 1011
+org: 000000101110 : 0 --- 010 ---- 1011
+what the f: 000000101111 : 0 --- 010 ---- 1011
+what the f: 000000101111 : 0 --- 010 ---- 1011
+what the f: 000000101111 : 0 --- 010 ---- 1011
+what the f: 000000101111 : 0 --- 010 ---- 1011
+what the f: 000000101111 : 0 --- 010 ---- 1011
+org: 000000101111 : 0 --- 010 ---- 1011
+what the f: 000001111101 : 0 --- 010 ---- 1011
+what the f: 000001111101 : 0 --- 011 ---- 1011
+what the f: 000001111101 : 0 --- 011 ---- 1111
+what the f: 000001111101 : 0 --- 011 ---- 1111
+what the f: 000001111101 : 0 --- 011 ---- 1111
+org: 000001111101 : 0 --- 011 ---- 1111
+what the f: 000001111101 : 0 --- 011 ---- 1111
+what the f: 000001111101 : 0 --- 011 ---- 1111
+what the f: 000001111101 : 0 --- 011 ---- 1111
+what the f: 000001111101 : 0 --- 011 ---- 1111
+what the f: 000001111101 : 0 --- 011 ---- 1111
+$finish called at time : 7 us : File "C:/Users/Student/Desktop/zxcvbnm/zxc/m152a-main/lab_2/lab_2.srcs/sim_1/new/tb.v" Line 62
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  1 15:49:34 2024...
