@@ -24,192 +24,185 @@ module stopwatch(
     input clk,
     input SEL,
     input ADJ,
-    input btnPAUSE,
+    input btnPAUSE_BOARD,
     input btnRST, 
-    output [6:0] seg,
-    output [3:0] an
+    output reg [6:0] seg,
+    output reg [3:0] an
     );
     
-    reg [26:0] clkCounter500, clkCounter2, clkCounter14, clkCounter1;
+    
+    
+    reg [31:0] clkCounter500, clkCounter2, clkCounter14, clkCounter1;
     
     reg clk500, clk2, clk14, clk1;
+    // clk14: blinking in adj mode
+    // clk500: displaying
     
     reg inc;
-        
-        
+    integer disp;
+    
+    reg btnPAUSE;
+    reg prevPAUSE;
     initial begin
-        clkCounter500 =0;
-        clkCounter14 =0;
-        clkCounter2 =0;
-        clkCounter1 =0;
+        clkCounter500 = 32'd0;
+        clkCounter14 = 32'd0;
+        clkCounter2 = 32'd0;
+        clkCounter1 = 32'd0;
         
-        inc = 1;
+        inc = 32'd1;
+        
+        disp = 0;
+        
+        btnPAUSE = 0;
+        prevPAUSE = 0;
     end
     
-    
-    // clock increment
-    always @(posedge clk) begin
-        clkCounter500 = clkCounter500 + inc;
-        clkCounter14 = clkCounter14 + inc;
-        clkCounter2 = clkCounter2 + inc;
-        clkCounter1 = clkCounter1 + inc;
-        
-        // for 500 hz
-        if (clkCounter500 == 200000) begin
-            clk500 = ~clk500;
-            clkCounter500 = 0;
-        end
-            
-
-        // for 2 hz
-        if (clkCounter2 == 50000000) begin
-            clk2 = ~clk2;
-            clkCounter2 = 0;
-        end
-            
-        // for 1.4 hz
-        if (clkCounter14 == 70000000) begin
-            clk14 = ~clk14;
-            clkCounter14 = 0;
-        end
-        
-        // for 1 hz
-        if (clkCounter1 == 100000000) begin
-            clk1 = ~clk1;
-            clkCounter1 = 0;
-        end
-                        
-    end
-    
+    integer sec10, sec1, min10, min1;
     integer sec, min;
-    always @(posedge clk1) begin
-        sec = sec + 1;
-        if (sec == 60) begin
+
+    // clock increment
+    always @(posedge clk or posedge btnRST) begin
+        if (btnRST) begin
+            clkCounter500 = 0;
+            clkCounter14 = 0;
+            clkCounter2 = 0;
+            clkCounter1 = 0;
             sec = 0;
-            min = min + 1;
-            if (min == 60) min = 0;
+            min = 0;
         end
-    end
-    
-    
-    // Display 7 segment bits
-    module seven_segment_decoder(
-        input [3:0] decimal_digit,
-        output [6:0] seven_segment_output
-    );
-     
-    // Define the inverted 7-segment representation for each decimal digit
-    //            A
-    //          -----
-    //       F |     | B
-    //         |  G  |
-    //          -----
-    //       E |     | C
-    //         |     |
-    //          -----
-    //            D
-     
-    // Inverted seven-segment representation for digits 0 to 9
-    parameter [6:0] inverted_seven_segment_data [0:9] = {
-        7'b011_1111, // 0
-        7'b000_0110, // 1
-        7'b101_1011, // 2
-        7'b100_1111, // 3
-        7'b110_0110, // 4
-        7'b110_1101, // 5
-        7'b111_1101, // 6
-        7'b000_0111, // 7
-        7'b111_1111, // 8
-        7'b110_1111  // 9
-    };
-     
-    // Output the inverted 7-segment representation based on the input decimal digit
-    assign seven_segment_output = inverted_seven_segment_data[decimal_digit];
-     
-    endmodule
-
-    
-    
-    // handle adjust
-    always @(ADJ) begin
-        inc = ~inc;
-    end
-    always @(posedge clk2) begin
-        if (ADJ) begin
-            
-        end
-    end
-    
-    
-    
-    
-    // ----- First block-------
-    assign S = D[11];
-    
-    reg[11:0] D_tmp;
-    
-      reg[2:0] exp;
-      integer index_leading0;
-      reg[3:0] Sig;
-      integer i;
-      
-      
-      
-      
-      
-      always @(D) begin
-              
-      // negate if negative
-          if (S)
-              D_tmp = ~D + 1;
-          else
-              D_tmp = D;
-          #100
-
-      // ----- next block: count leading 0 -------
+        else begin
                   
-          
-
-        exp = 0;
-        index_leading0 = 0;
-            
-                #100
-        for (i=5; i<=11; i=i+1) begin
-            if (D_tmp[i]) begin
-                index_leading0 = i;
-                exp = 8 - (12-i-1);
-            end
-           end
-        //for (i=1; i<=7; i=i+1)
-        //    if (D_tmp[i+3]) exp <= i;
-            
+                clkCounter500 = clkCounter500 + 32'd1;
+                clkCounter14 = clkCounter14 + 32'd1;
+                clkCounter2 = clkCounter2 + 32'd1;
+                if (btnPAUSE == 0 && ADJ == 0) clkCounter1 = clkCounter1 + 32'd1;
+                
+                
+                // for 500 hz
+                if (clkCounter500 >= 32'd200000) begin
+                    clk500 = ~clk500;
+                    clkCounter500 = 32'd0;
+                    
+                    sec10 = sec /10;
+                    sec1 = sec % 10;
+                    min10 = min/10;
+                    min1 = min % 10;
+                    
+                    case (disp)
+                        0: begin
+                            if (clk14 && ADJ && SEL) begin
+                                an = 4'b1111;
+                            end else an = 4'b1110;
+                            seg = seven_segment_decoder(sec1);
+                        end
+                        1: begin
+                            if (clk14 && ADJ && SEL) begin
+                                an = 4'b1111;
+                            end else an = 4'b1101;
+                            seg = seven_segment_decoder(sec10);
+                        end
+                        2: begin
+                            if (clk14 && ADJ && ~SEL) begin
+                                an = 4'b1111;
+                            end else an = 4'b1011;
+                            seg = seven_segment_decoder(min1);
+                        end
+                        3: begin
+                            if (clk14 && ADJ && ~SEL) begin
+                                an = 4'b1111;
+                            end else an = 4'b0111;
+                            seg = seven_segment_decoder(min10);
+                        end
+                     endcase
+                     disp = (disp+1) % 4;
+                    
         
-        #1000
-            
-     // ----- next block: get first four bits -------
-
-        if (index_leading0 == 0)
-            Sig = 4'b0000 | D_tmp[index_leading0];
-        else if (index_leading0 == 1)
-                        Sig = 4'b0000 | D_tmp[index_leading0 -:2]; 
-                else if (index_leading0 == 2)
-                                Sig = 4'b0000 | D_tmp[index_leading0 -:3];
-                        else Sig = D_tmp[index_leading0 -:4];
-        #1000
-        //$display("got: inp - %b : %b:%b: 1st 4-bits %b, index %d",D_tmp, S, exp, Sig,index_leading0);
-        if (D_tmp[index_leading0 - 4] == 1) begin
-                //$display("if 0");
-                if (Sig == 4'b1111 && exp < 7) begin
-                    //$display("if 1");
-                    Sig = 0;
-                    exp = exp + 1;
-                end else if (Sig < 4'b1111) begin
-                    Sig = Sig + 1;
                 end
-       end       
-      //$display("got: inp - %b : %b:%b: 1st 4-bits %b, index %d",D, S, exp, Sig,index_leading0);
-
-     end
-   assign E = exp;
-   assign F = Sig;
+                    
+        
+                // for 2 hz
+                if (clkCounter2 >= 32'd50000000) begin
+                    clk2 = ~clk2;
+                    clkCounter2 = 32'd0;
+                     
+                     
+                    // adjust mode increment
+                    if (ADJ == 1) begin
+                        if (SEL == 1) begin
+                            // flash in second       
+                            sec = (sec + 1) % 60;
+                        end else begin
+                            // flash in minute  
+                            min = (min + 1) % 60;
+                        end
+                    end
+                    
+                end
+                    
+                // for 1.4 hz
+                if (clkCounter14 >= 32'd25000000) begin
+                    clk14 = ~clk14;
+                    clkCounter14 = 32'd0;
+                end
+                
+                // for 1 hz
+                if (clkCounter1 >= 32'd100000000) begin
+                    clk1 = ~clk1;
+                    clkCounter1 = 32'd0;
+                    
+                    sec = sec + 1;
+                    if (sec == 60) begin
+                        sec = 0;
+                        min = min + 1;
+                        if (min == 60) min = 0;
+                    end
+                end
+                
+        end 
+    end
+    
+    
+    
+    // --------------- Display 7 segment bits ---------------
+    function [6:0] seven_segment_decoder;
+        input [3:0] digit;
+        begin
+            case(digit)
+                0: seven_segment_decoder=~7'b011_1111;
+                1: seven_segment_decoder=~7'b000_0110;
+                2: seven_segment_decoder=~7'b101_1011;
+                3: seven_segment_decoder=~7'b100_1111;
+                4: seven_segment_decoder=~7'b110_0110;
+                5: seven_segment_decoder=~7'b110_1101;
+                6: seven_segment_decoder=~7'b111_1101;
+                7: seven_segment_decoder=~7'b000_0111;
+                8: seven_segment_decoder=~7'b111_1111;
+                9: seven_segment_decoder=~7'b110_1111;
+            endcase
+         
+        end
+    endfunction
+    
+    
+//      always @(posedge btnPAUSE_BOARD) begin
+//        btnPAUSE = ~btnPAUSE;
+//      end
+    always @(posedge clkCounter500) begin
+        if (prevPAUSE == 0 && btnPAUSE_BOARD == 1) begin
+            btnPAUSE = ~btnPAUSE;
+        end
+        prevPAUSE = btnPAUSE_BOARD;
+    end
+    // --------------- handle adjust ---------------
+//    always @(posedge clk2) begin
+//    end
+//    always @(posedge clk2) begin
+//        if (ADJ) begin
+            
+//        end
+//    end
+    
+    
+    
+    
 endmodule
